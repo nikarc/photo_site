@@ -12,8 +12,13 @@ h2,
 h3,
 h4,
 h5 {
-  font-weight: 200;
-  margin-bottom: 1em; }
+  font-weight: 200; }
+  h1:not(.title),
+  h2:not(.title),
+  h3:not(.title),
+  h4:not(.title),
+  h5:not(.title) {
+    margin-bottom: 1em; }
 
 a {
   color: black;
@@ -37,6 +42,9 @@ ul {
       height: 100%;
       object-fit: contain; }
 
+small {
+  font-size: .5em; }
+
 .container {
   padding-left: 1.2em;
   padding-right: 1.2em;
@@ -48,7 +56,8 @@ ul {
   margin-top: 2em; }
 
 .text-center {
-  text-align: center; }
+  text-align: center;
+  display: block; }
 
 #wrapper {
   width: 100vw;
@@ -79,3 +88,6 @@ ul {
   text-transform: uppercase; }
   #logo h1 {
     margin-bottom: 0; }
+
+.click-to-enlarge {
+  opacity: 0; }
