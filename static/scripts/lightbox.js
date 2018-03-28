@@ -52,7 +52,6 @@ $(function() {
     };
 
     self.hide = function() {
-      console.log($(_lightboxId + ' .lightbox'));
       $(_lightboxId).fadeOut(300);
       $('body').css('overflow', 'auto');
     };
@@ -92,9 +91,12 @@ $(function() {
       self.imageEl.attr('src', '');
       self.imageEl.attr('src', self.images[self.currentIndex]);
       self.imageEl.parent('.lightbox__image-link').attr('href', self.images[self.currentIndex]);
-      self.imageEl.animate({
-        opacity: 1
-      }, 300);
+      // TODO: Is this creating a new event handler every click? Can i reuse?
+      self.imageEl.parents('.lightbox__wrap').imagesLoaded(function() {
+        self.imageEl.animate({
+          opacity: 1
+        }, 500);
+      });
     }, 300);
   };
 
@@ -113,9 +115,11 @@ $(function() {
       self.imageEl.attr('src', '');
       self.imageEl.attr('src', self.images[self.currentIndex]);
       self.imageEl.parent('.lightbox__image-link').attr('href', self.images[self.currentIndex]);
-      self.imageEl.animate({
-        opacity: 1
-      }, 300);
+      self.imageEl.parents('.lightbox__wrap').imagesLoaded(function() {
+        self.imageEl.animate({
+          opacity: 1
+        }, 500);
+      });
     }, 300);
   };
 });

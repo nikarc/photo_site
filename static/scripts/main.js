@@ -2,16 +2,16 @@ $(function() {
   var blackWhiteLightbox = new Lightbox({
     el: '#black-and-white',
     images: [
-      'static/images/tempImageForSave 2.JPG',
-      'static/images/tempImageForSave 5.JPG',
-      'static/images/tempImageForSave 7.JPG',
-      'static/images/tempImageForSave 8.JPG',
-      'static/images/tempImageForSave 9.JPG',
-      'static/images/site_image1.JPG',
-      'static/images/site_image3.JPG',
-      'static/images/site_image4.JPG',
-      'static/images/site_image5.JPG',
-      'static/images/site_image6.JPG',
+      'static/images/tempImageForSave2.jpg',
+      'static/images/tempImageForSave5.jpg',
+      'static/images/tempImageForSave7.jpg',
+      'static/images/tempImageForSave8.jpg',
+      'static/images/tempImageForSave9.jpg',
+      'static/images/site_image1.jpg',
+      'static/images/site_image3.jpg',
+      'static/images/site_image4.jpg',
+      'static/images/site_image5.jpg',
+      'static/images/site_image6.jpg',
     ]
   });
 
@@ -20,7 +20,7 @@ $(function() {
     images: [
       'static/images/site_image2.jpg',
       'static/images/site_image7.jpg',
-      'static/images/tempImageForSave 6.jpg',
+      'static/images/tempImageForSave6.jpg',
       'static/images/site_image8.jpg',
       'static/images/site_image9.jpg',
     ]

@@ -43,6 +43,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
+}
+
+.lightbox__close .fa,
+.lightbox__controls .fa {
+  color: white;
 }
 
 .lightbox__wrap img {

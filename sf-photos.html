@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nick Arcuri - San Francisco Feb 2018</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:200,400" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="static/styles/lightbox.css">
+  <link rel="stylesheet" href="static/styles/main.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+  <script src="static/scripts/lightbox.js"></script>
+  <script type="text/javascript" src="static/scripts/sf.js"></script>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="splash">
+      <div class="nav">
+        <div>
+          <a id="logo" href="/">
+            <h1>San Francisco</h1>
+          </a>
+          <hr>
+          <p class="subhead">Jan 31 - Feb 4 2018</p>
+        </div>
+      </div>
+    </div>
+    <div id="call-to-scroll">
+      <div class="chevron-down"></div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <h3 class="text-center title">Black & White</h3>
+        <small class="click-to-enlarge text-center">Click to Enlarge</small>
+        <div id="thumbnails"></div>
+        <script id="thumbnail-template" type="text/x-handlebars-template">
+          <ul class="image-list" id="sf-photos">
+            {{#each this}}
+              <li><a href="#" class="lightbox__open" data-lightbox-index="{{@index}}"><img src="{{this}}" alt=""></a></li>
+            {{/each}}
+          </ul>
+        </script>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js"></script>
+</body>
+</html>

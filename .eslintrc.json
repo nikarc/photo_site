@@ -24,6 +24,7 @@
     },
     "globals": {
       "$": true,
-      "Lightbox": true
+      "Lightbox": true,
+      "Handlebars": true
     }
 }
